@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-RUN ng build --prod
-
+RUN ng build
 FROM nginx 
 COPY --from=build /app/dist/myportfolioapp/ /usr/share/nginx/html/
