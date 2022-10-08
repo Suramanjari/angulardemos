@@ -9,3 +9,6 @@ RUN ng build --prod
 FROM nginx 
 COPY --from=build /app/dist/myPortfolio/ /usr/share/nginx/html/
 
+
+
+
