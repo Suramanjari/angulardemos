@@ -7,4 +7,4 @@ COPY . .
 RUN ng build --prod
 
 FROM nginx 
-COPY --from=build /app/dist/myEventManagementApp/ /usr/share/nginx/html/
+COPY --from=build /app/dist/myeventmanagementapp/ /usr/share/nginx/html/
