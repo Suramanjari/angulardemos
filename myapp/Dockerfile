@@ -8,3 +8,4 @@ RUN ng build --prod
 
 FROM nginx 
 COPY --from=build /app/dist/myapp/ /usr/share/nginx/html/
+
